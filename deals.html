@@ -1,0 +1,1704 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Yomoto | Digital Vendor in Southeast Asia</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Yomoto adalah..." />
+	<meta name="keywords" content="vendor di tangerang selatan, vendor di indonesia" />
+	<meta name="author" content="Yomoto" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- add-menu-deals-card-slider -->
+	<link rel="stylesheet" href="css/promo-slider.css">
+
+	<!-- add-slider-image-for-menu-deals-card -->
+	<style>
+		.MultiCarousel { 
+			float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; 
+		}
+		.MultiCarousel .MultiCarousel-inner {
+			transition: 1s ease all; float: left; 
+		}
+		.MultiCarousel .MultiCarousel-inner .item { 
+			float: left;
+			width: 350px !important;
+		}
+		.MultiCarousel .MultiCarousel-inner .item > div { 
+			text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;
+		}
+		.MultiCarousel .leftLst, .MultiCarousel .rightLst { 
+			position:absolute; border-radius:50%;top:calc(50% - 20px); 
+		}
+		.MultiCarousel .leftLst { 
+			left:0; 
+		}
+		.MultiCarousel .rightLst { 
+			right:0; 
+		}    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { 
+			pointer-events: none; background:#ccc; 
+		}
+	</style>
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- add-promo-slider -->
+	<style>
+		.col-centered {
+			float: none;
+			margin: 0 auto;
+		}
+
+		.carousel-control { 
+			width: 8%;
+			width: 0px;
+		}
+		.carousel-control.left,
+		.carousel-control.right { 
+			margin-right: 40px;
+			margin-left: 32px; 
+			background-image: none;
+			opacity: 1;
+		}
+		.carousel-control > a > span {
+			color: white;
+			font-size: 29px !important;
+		}
+
+		.carousel-col { 
+			position: relative; 
+			min-height: 1px; 
+			padding: 5px; 
+			float: left;
+		}
+
+		.active > div { display:none; }
+		.active > div:first-child { display:block; }
+
+		/*xs*/
+		@media (max-width: 767px) {
+		.carousel-inner .active.left { left: -50%; }
+		.carousel-inner .active.right { left: 50%; }
+			.carousel-inner .next        { left:  50%; }
+			.carousel-inner .prev		     { left: -50%; }
+		.carousel-col                { width: 50%; }
+			.active > div:first-child + div { display:block; }
+		}
+
+		/*sm*/
+		@media (min-width: 768px) and (max-width: 991px) {
+		.carousel-inner .active.left { left: -50%; }
+		.carousel-inner .active.right { left: 50%; }
+			.carousel-inner .next        { left:  50%; }
+			.carousel-inner .prev		     { left: -50%; }
+		.carousel-col                { width: 50%; }
+			.active > div:first-child + div { display:block; }
+		}
+
+		/*md*/
+		@media (min-width: 992px) and (max-width: 1199px) {
+		.carousel-inner .active.left { left: -33%; }
+		.carousel-inner .active.right { left: 33%; }
+			.carousel-inner .next        { left:  33%; }
+			.carousel-inner .prev		     { left: -33%; }
+		.carousel-col                { width: 33%; }
+			.active > div:first-child + div { display:block; }
+		.active > div:first-child + div + div { display:block; }
+		}
+
+		/*lg*/
+		@media (min-width: 1200px) {
+		.carousel-inner .active.left { left: -25%; }
+		.carousel-inner .active.right{ left:  25%; }
+			.carousel-inner .next        { left:  25%; }
+			.carousel-inner .prev		     { left: -25%; }
+		.carousel-col                { width: 25%; }
+			.active > div:first-child + div { display:block; }
+		.active > div:first-child + div + div { display:block; }
+			.active > div:first-child + div + div + div { display:block; }
+		}
+
+		.block {
+			/* width: 306px; */
+			width: 100%;
+			height: 230px;
+		}
+
+		/* .red {background: red;}
+
+		.blue {background: blue;}
+
+		.green {background: green;}
+
+		.yellow {background: yellow;} */
+	</style>
+
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+	
+		<header id="fh5co-header-section" class="sticky-banner">
+			<!-- <div class="container"> -->
+				<div class="nav-header">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+					<h1 id="fh5co-logo">
+						<a href="index.html">
+							<img src="">
+						</a>
+					</h1>
+					<!-- START #fh5co-menu-wrap -->
+					<nav id="fh5co-menu-wrap" role="navigation" style="float: left;padding-left: 15px;">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+							<li class="active"><a href="index.html" >Home</a></li>
+							<!-- <li>
+								<a href="groom-bride.html" class="fh5co-sub-ddown">Groom &amp; Bride</a>
+								<ul class="fh5co-sub-menu">
+									<li><a href="https://freehtml5.co/wedding-free-html5-bootstrap-template-for-wedding-websites/">Wedding Template</a></li>
+									<li><a href="https://freehtml5.co/marble-free-html5-bootstrap-template-for-portfolio-or-multi-purpose-websites/">Marble Template</a></li>
+									<li><a href="https://freehtml5.co/tasty-free-bootstrap-html5-template-for-restaurant-websites/">Tasty Template</a></li>
+									<li><a href="https://freehtml5.co/education-free-html5-bootstrap-template-elearning-school-websites/">Education Template</a></li>
+									<li><a href="https://freehtml5.co/words-free-html5-bootstrap-template-multi-purpose/">Words Template</a></li>
+								</ul>
+							</li> -->
+							<li><a href="deals.html">Deals</a></li>
+							<li><a href="inspirations.html">Inspirations</a></li>
+							<li><a href="vendors.html">Vendors</a></li>
+							<li><a href="#">Events</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="when-where.html">When &amp; Where</a></li>
+							<li><a href="guest.html">Guest</a></li>
+							<!-- <li><a href="gallery.html">Gallery</a></li> -->
+						</ul>
+					</nav>
+				</div>
+			<!-- </div> -->
+		</header>
+		<!-- end:header-top -->
+
+		<!-- add-promo-slider -->
+		<div class="container" style="display: none;">
+			<div class="row">
+				<div class="col-xs-11 col-md-12 col-centered">
+		
+					<div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2500" style="padding-top: 11%;">
+						<div class="carousel-inner">
+							<div class="item active">
+								<div id="image-slider-promo" class="carousel-col">
+									<div class="block red img-responsive"></div>
+									<!-- <div><img style="border-radius: 5%;" src="images/slider-promo/slider-promo2.png" alt=""></div> -->
+								</div>
+							</div>
+							<div class="item">
+								<div id="image-slider-promo" class="carousel-col">
+									<div class="block green img-responsive"></div>
+									<!-- <div><img style="border-radius: 5%;" src="images/slider-promo/slider-promo2.png" alt=""></div> -->
+								</div>
+							</div>
+							<div class="item">
+								<div id="image-slider-promo" class="carousel-col">
+									<div class="block blue img-responsive"></div>
+									<!-- <div><img style="border-radius: 5%;" src="images/slider-promo/slider-promo2.png" alt=""></div> -->
+								</div>
+							</div>
+							<div class="item">
+								<div id="image-slider-promo" class="carousel-col">
+									<div class="block yellow img-responsive"></div>
+									<!-- <div><img style="border-radius: 5%;" src="images/slider-promo/slider-promo2.png" alt=""></div> -->
+								</div>
+							</div>
+							<div class="item">
+								<div id="image-slider-promo" class="carousel-col">
+									<!-- <div class="block yellow img-responsive"></div> -->
+									<div><img style="border-radius: 5%;" src="images/slider-promo/slider-promo2.png" alt=""></div>
+								</div>
+							</div>
+						</div>
+		
+						<!-- Controls -->
+						<div id="leftsliderpromo" class="left carousel-control" style="top: 150px;">
+							<a href="#carousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+						</div>
+						<div id="rightsliderpromo" class="right carousel-control" style="top: 150px;">
+							<a href="#carousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+		
+				</div>
+			</div>
+		</div>
+
+		<!-- add-button-bar -->
+		<div id="buttonbar" style="padding-top: 8%;padding-bottom: 2%;">
+			<div class="container">
+				<!-- <div class="row">
+					<div class="col-md-12"> -->
+						<div class="row">
+							<p><a href="#" class="btn btn-default btn-sm" style="padding: 1.5rem 1.6rem;"><span style="font-size: 1.5rem;">All Deals</span></a></p>
+							<p><a href="#" class="btn btn-default btn-sm" style="padding: 1.5rem 1.6rem;background-color: #6ddbef !important;"><span style="font-size: 1.5rem;">All Inclusive Package</span></a></p>
+							<p><a href="#" class="btn btn-default btn-sm" style="padding: 1.5rem 1.6rem;background-color: #5fbeed !important;"><span style="font-size: 1.5rem;">Venue Deals</span></a></p>
+							<p><a href="#" class="btn btn-default btn-sm" style="padding: 1.5rem 1.6rem;background-color: #4f9fdd !important;"><span style="font-size: 1.5rem;">Deals</span></a></p>
+						</div>
+					<!-- </div> -->
+					<!-- <div class="col-md-6"></div> -->
+				<!-- </div> -->
+			</div>
+		</div>
+
+		<!-- add-all-inclusive-package -->
+		<div id="" class="fh5co-section-gray MultiCarousel" style="padding: 5em 0;">
+		<div class="container">
+			<!-- <div class="container"> -->
+				<div class="text-left heading-section" style="padding-bottom: 0px !important;">
+					<!-- <h2>Personal Wedding Consultans, Ready to Assist</h2> -->
+					<p style="font-size: 140%;line-height: 150%;color: #333;font-weight: 600;margin: 0 25px 10px;font-size: 220%;">ALL INCLUSIVE PACKAGE</p>
+				</div>
+				<!-- <div> -->
+					<div class="" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+						<div class="MultiCarousel-inner">
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package1.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package2.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package3.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package4.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package5.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package6.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package7.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+						</div>
+						<button id="buttonleftallinclusivepackage" class="btn btn-primary leftLst" style="background-color: #88d0e98a !important;padding: 0.84rem 1.14rem;display: none;"><</button>
+						<button class="btn btn-primary rightLst" style="background-color: #88d0e98a !important;padding: 0.84rem 1.14rem;">></button>
+					</div>
+				<!-- </div> -->
+			<!-- </div> -->
+		</div>
+		</div>
+		
+		<!-- add-venue-deals -->
+		<div id="" class="fh5co-section MultiCarousel" style="padding: 5em 0;background-color: #ffffff;">
+		<div class="container">
+			<!-- <div class="container"> -->
+				<div class="text-left heading-section" style="padding-bottom: 0px !important;">
+					<!-- <h2>Personal Wedding Consultans, Ready to Assist</h2> -->
+					<p style="font-size: 140%;line-height: 150%;color: #333;font-weight: 600;margin: 0 25px 10px;font-size: 220%;">VENUE DEALS</p>
+				</div>
+				<!-- <div> -->
+					<div class="" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+						<div class="MultiCarousel-inner">
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package1.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package2.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package3.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package4.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package5.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package6.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package7.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+						</div>
+						<button id="buttonleftallinclusivepackagev2" class="btn btn-primary leftLst" style="background-color: #88d0e98a !important;padding: 0.84rem 1.14rem;display: none;"><</button>
+						<button class="btn btn-primary rightLst" style="background-color: #88d0e98a !important;padding: 0.84rem 1.14rem;">></button>
+					</div>
+				<!-- </div> -->
+			<!-- </div> -->
+		</div>
+		</div>
+
+		<!-- add-deals -->
+		<div id="" class="fh5co-section-gray MultiCarousel" style="padding: 5em 0;">
+		<div class="container">
+			<!-- <div class="container"> -->
+				<div class="text-left heading-section" style="padding-bottom: 0px !important;">
+					<!-- <h2>Personal Wedding Consultans, Ready to Assist</h2> -->
+					<p style="font-size: 140%;line-height: 150%;color: #333;font-weight: 600;margin: 0 25px 10px;font-size: 220%;">DEALS</p>
+				</div>
+				<!-- <div> -->
+					<div class="" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+						<div class="MultiCarousel-inner">
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package1.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package2.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package3.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package4.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package5.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package6.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="pad15">
+									<!-- Card -->
+									<div class="card promoting-card">
+
+										<!-- Card content -->
+										<div class="card-body d-flex flex-row">
+									
+										<!-- Avatar -->
+										<img src="images/deals/icon-package.png" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+									
+										<!-- Content -->
+										<div>
+									
+											<!-- Title -->
+											<p class="card-title font-weight-bold mb-2">Hotel Ibis Gading Serpong</p>
+											<!-- Subtitle -->
+											<!-- <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p> -->
+											<p class="card-text" style="font-size: 1.2rem;text-align: left;">Engangement Package, Jakarta.ID</p>
+									
+										</div>
+									
+										</div>
+									
+										<!-- Card image -->
+										<div class="view overlay">
+										<img class="card-img-top rounded-0" src="images/deals/dummy-package7.png" alt="Card image cap">
+										<a href="#!">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+										</div>
+									
+										<!-- Card content -->
+										<div class="card-body" style="padding-bottom: 0px;">
+									
+											<div class="collapse-content">
+												<div class="col-md-7" style="padding-left: 0px;"><span style="font-size: 1.7rem;"><b>IDR. 29.500.000</b></span></div>
+												<div class="col-md-5" style="padding-right: 0px;">
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> 50 Pax</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Engangement Package</span></div>
+													<div class="row"><span style="font-size: 1rem;text-align: left;"><img src="images/deals/icon-checklist.png"> Venue</span></div>
+													
+												</div>
+												<!-- Text -->
+												<!-- <p class="card-text collapse" id="collapseContent">Recently, we added several exotic new dishes to our restaurant menu. They come from countries such as Mexico, Argentina, and Spain. Come to us, have some delicious wine and enjoy our juicy meals from around the world.</p> -->
+												<!-- Button -->
+												<!-- <a class="btn btn-flat red-text p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+												<i class="fas fa-share-alt text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+												<i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
+											</div>
+										</div>
+										<hr>
+										<p style="font-size: 1.1rem;"><span style="color: #4d9ba9;">Installment </span>0% starts from IDR.1.250.000 per month</p>
+									</div>
+									<!-- Card -->
+								</div>
+							</div>
+						</div>
+						<button id="buttonleftallinclusivepackagev3" class="btn btn-primary leftLst" style="background-color: #88d0e98a !important;padding: 0.84rem 1.14rem;display: none;"><</button>
+						<button class="btn btn-primary rightLst" style="background-color: #88d0e98a !important;padding: 0.84rem 1.14rem;">></button>
+					</div>
+				<!-- </div> -->
+			<!-- </div> -->
+		</div>
+		</div>
+
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h2>
+								<img src="images/logo_yomoto_2.png">
+							</h2>
+						</div>
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<p class="fh5co-social-icons">
+								<a href="#"><i class="icon-twitter2"></i></a>
+								<a href="#"><i class="icon-facebook2"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-dribbble2"></i></a>
+								<a href="#"><i class="icon-youtube"></i></a>
+							</p>
+							<p><a href="#">Copyright 2019 Yomoto.com</a>. All Rights Reserved. <br>Powered <i class="icon-heart3"></i> by <a href="#" target="_blank">WaroengXtudio.com</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<!-- jQuery -->
+	<script src="dist/scripts.min.js"></script>
+
+	<!-- add-slider-image-for-all-inclusivepackage-venuedeals-deals -->
+	<script>
+		$(document).ready(function () {
+		var itemsMainDiv = ('.MultiCarousel');
+		var itemsDiv = ('.MultiCarousel-inner');
+		var itemWidth = "";
+
+		$('.leftLst, .rightLst').click(function () {
+			var condition = $(this).hasClass("leftLst");
+			if (condition)
+				click(0, this);
+			else
+				click(1, this)
+		});
+
+		ResCarouselSize();
+
+
+
+
+		$(window).resize(function () {
+			
+			ResCarouselSize();
+		});
+
+		//this function define the size of the items
+		function ResCarouselSize() {
+			var incno = 0;
+			var dataItems = ("data-items");
+			var itemClass = ('.item');
+			var id = 0;
+			var btnParentSb = '';
+			var itemsSplit = '';
+			var sampwidth = $(itemsMainDiv).width();
+			var bodyWidth = $('body').width();
+			$(itemsDiv).each(function () {
+				id = id + 1;
+				var itemNumbers = $(this).find(itemClass).length;
+				btnParentSb = $(this).parent().attr(dataItems);
+				itemsSplit = btnParentSb.split(',');
+				$(this).parent().attr("id", "MultiCarousel" + id);
+
+				if (bodyWidth >= 1200) {
+					incno = itemsSplit[1];
+					itemWidth = sampwidth / incno;
+				}
+				else if (bodyWidth >= 992) {
+					incno = itemsSplit[1];
+					itemWidth = sampwidth / incno;
+				}
+				else if (bodyWidth >= 768) {
+					incno = itemsSplit[1];
+					itemWidth = sampwidth / incno;
+				}
+				else {
+					incno = itemsSplit[0];
+					itemWidth = sampwidth / incno;
+				}
+				$(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
+				$(this).find(itemClass).each(function () {
+					$(this).outerWidth(itemWidth);
+				});
+
+				$(".leftLst").addClass("over");
+				$(".rightLst").removeClass("over");
+
+			});
+		}
+
+
+		//this function used to move the items
+		function ResCarousel(e, el, s) {
+			var leftBtn = ('.leftLst');
+			var rightBtn = ('.rightLst');
+			var translateXval = '';
+			var divStyle = $(el + ' ' + itemsDiv).css('transform');
+			var values = divStyle.match(/-?[\d\.]+/g);
+			var xds = Math.abs(values[4]);
+			if (e == 0) {
+				translateXval = parseInt(xds) - parseInt(itemWidth * s);
+				$(el + ' ' + rightBtn).removeClass("over");
+
+				if (translateXval <= itemWidth / 2) {
+					translateXval = 0;
+					$(el + ' ' + leftBtn).addClass("over");
+				}
+				
+			}
+			else if (e == 1) {
+				var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
+				translateXval = parseInt(xds) + parseInt(itemWidth * s);
+				$(el + ' ' + leftBtn).removeClass("over");
+
+				if (translateXval >= itemsCondition - itemWidth / 2) {
+					translateXval = itemsCondition;
+					$(el + ' ' + rightBtn).addClass("over");
+					
+				}
+			$('#buttonleftallinclusivepackage').show();				
+			$('#buttonleftallinclusivepackagev2').show();				
+			$('#buttonleftallinclusivepackagev3').show();				
+				
+			}
+			$(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
+		}
+
+		//It is used to get some elements from btn
+		function click(ell, ee) {
+			var Parent = "#" + $(ee).parent().attr("id");
+			var slide = $(Parent).attr("data-slide");
+			ResCarousel(ell, Parent, slide);
+		}
+
+	});
+	</script>
+
+	</body>
+</html>
+
